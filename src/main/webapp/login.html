@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Stackflood</title>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="./js/login-reg.js"></script>
+<script type="text/javascript" src="./js/blog-post.js"></script>
+<link rel="stylesheet" href="./css/login-reg.css">
+<link rel="stylesheet" href="./css/blog-post.css">
+</head>
+<body>
+<div class="login-page">
+  <p class="main-title">Stack <span>flood</span></p>
+  <div class="register-div">
+      <input type="text" id="name" placeholder="username"/><span id="usernameError"></span>
+      <input type="password" id ="password" placeholder="password"/><span id="pwdErr"></span>
+      <input type="text" id ="phonenumber" placeholder="phone number"/><span id="phnErr"></span>
+      <input type="text" id="email" placeholder="email address"/><span id="emailErr"></span>
+      <button id="create">create</button>
+      <p class="message">Already registered? <a href="#" id="signinhrf">Sign In</a></p>
+   </div>
+   <div class="success-reg-div">
+   <!-- 
+   	  <table>
+   	  	<tr><td>User name</td><td>:</td><td><span id="showUname"></span></td></tr>
+   	  	<tr><td>Email</td><td>:</td><td><span id="showEmail"></span></td></tr>
+   	  </table>
+   	   -->
+   	  <div class="show-uname">User name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="showUname"></span></div>
+   	  <hr>
+   	  <div class="show-phn">Phone number&nbsp;&nbsp;&nbsp;<span id="showPhn"></span></div>
+   	  <hr>
+   	  <div class="show-email">Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="showEmail"></span></div>
+   	  <hr>
+      <p class="message">Successfully registered. <a href="#" id="loginhrf">Sign In</a></p>
+   </div>
+   <div class="login-div">
+     <input type="text" id="uname" placeholder="username"/><span id="unameError"></span>
+     <input type="password" id="upassword" placeholder="password"/><span id="upwdErr"></span><span id="loginErr"></span>
+     <button id="login">login</button>
+     <p class="message">Not registered? <a href="#" id="registerhrf">Create an account</a></p>
+   </div>
+</div>
+<div class="div-blog-posts">
+	 <div class="div-blog-header">
+  		<div class="div-blog-header-content">
+			<h1>Stack<span>flood</span></h1>
+			<div class="div-blog-header-links">
+				<a href="#" id="newposthrf">new post</a>
+				<span class="bar">|</span>
+				<a href="#" id="postshrf">posts</a>
+				<span>|</span>
+				<a href="#" id="logouthrf">log out</a>
+			</div>
+		</div>
+	 </div>
+	 <div class="div-blog-user-details">
+	 </div>
+     <div class="div-list-posts">
+     	<table id="tableListPosts">
+     	</table> 
+     </div>
+     <div class="div-show-post">
+     	<div class="div-show-post-title"></div>
+		<div class="div-show-post-details">
+			<div class="div-show-post-article"></div>
+			<div class="div-show-post-footer">
+				<div class="div-show-post-tags"></div>
+				<div class="div-show-post-footer-right">
+					<div class="div-show-post-created-date"></div>
+					<div class="div-show-post-createdby"></div>
+				</div>
+			</div>
+		</div>
+		<div class="div-post-reply">
+			<section class="div-replyto-post-article">
+				<textarea id="replyPostArticle" placeholder="Add your reply"></textarea><span id="postArticleError"></span>
+			</section>
+			<div class="div-create-reply-btns">
+				<button id="replyBtn">Reply</button>
+				<button id="replyPostCancelBtn">Cancel</button>
+			</div>
+		</div>
+	 </div>
+     <div class="div-create-post">
+     	<section class="div-create-post-title">
+     		<input type="text" id="postTitle" placeholder="Title This Post"/><span id="postTitleError"></span>
+     	</section>
+     	<section class="div-create-post-article">
+     		<textarea id="postArticle" placeholder="Add details for the post"></textarea><span id="postArticleError"></span>
+     	</section>
+     	<section class="div-create-post-tags">
+     		<input type="text" id="tagPost" placeholder="Tag This Post"/><span id="tagPostError"></span>
+     	</section>
+     	<div class="div-create-post-btns">
+     		<button id="postBtn">Post</button>
+     		<button id="postCancelBtn">Cancel</button>
+     	</div>
+     </div>
+</div>
+</body>
+</html>
